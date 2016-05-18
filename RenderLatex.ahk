@@ -1,6 +1,8 @@
+SelectedEq = ""
 ^l::
-    ; Uncomment extra lines to enable clipboard save/restore. This may cause issues with some client software.
-    ; ClipSaved := ClipboardAll
+    global SelectedEq
+    ClipSaved := ClipboardAll
+    
     SendInput, ^c
     ClipWait, 1
     
@@ -12,9 +14,20 @@
     SendInput ^v
     
     Sleep, 50
-    Clipboard := SelectedEq
+      
+    Clipboard := ClipSaved
+    ClipSaved =   ; Free the memory in case the clipboard was very large.
+Return
+
+^b::
+    global SelectedEq
     
-    ; Sleep, 100    
-    ; Clipboard := ClipSaved
-    ; ClipSaved =   ; Free the memory in case the clipboard was very large.
+    ClipSaved := ClipboardAll
+    
+    Clipboard := SelectedEq
+    Send, ^v
+    Sleep, 50
+    
+    Clipboard := ClipSaved
+    ClipSaved =   ; Free the memory in case the clipboard was very large.
 Return
