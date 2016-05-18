@@ -1,5 +1,6 @@
 ^l::
-    ClipSaved := ClipboardAll
+    ; Uncomment extra lines to enable clipboard save/restore. This may cause issues with some client software.
+    ; ClipSaved := ClipboardAll
     SendInput, ^c
     ClipWait, 1
     
@@ -7,6 +8,6 @@
     SendInput ^v
     Sleep, 100
     
-    Clipboard := ClipSaved
-    ClipSaved =   ; Free the memory in case the clipboard was very large.
+    ; Clipboard := ClipSaved
+    ; ClipSaved =   ; Free the memory in case the clipboard was very large.
 Return
