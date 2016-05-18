@@ -6,8 +6,13 @@
     
     Sleep, 50
     
+    SelectedEq := Clipboard
+    
     RunWait, javaw -cp ./lib/jlatexmath-1.0.4.jar;./bin/ LatexRenderer "%clipboard%"
     SendInput ^v
+    
+    Sleep, 50
+    Clipboard := SelectedEq
     
     ; Sleep, 100    
     ; Clipboard := ClipSaved
