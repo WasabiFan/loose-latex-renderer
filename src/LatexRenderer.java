@@ -18,7 +18,7 @@ public class LatexRenderer {
         
         TeXFormula formula = new TeXFormula(args[0]);
 
-        TeXIcon icon = formula.new TeXIconBuilder().setStyle(TeXConstants.STYLE_DISPLAY).setSize(20).build();
+        TeXIcon icon = formula.new TeXIconBuilder().setStyle(TeXConstants.STYLE_DISPLAY).setSize(50).build();
         icon.setInsets(new Insets(5, 5, 5, 5));
 
         ClipboardImageManager clipImg = new ClipboardImageManager(latexIconToImage(icon));
