@@ -1,4 +1,5 @@
 SelectedEq = ""
+
 ^l::
     global SelectedEq
     ClipSaved := ClipboardAll
@@ -19,7 +20,7 @@ SelectedEq = ""
     ClipSaved =   ; Free the memory in case the clipboard was very large.
 Return
 
-^b::
+^k::
     global SelectedEq
     
     ClipSaved := ClipboardAll
