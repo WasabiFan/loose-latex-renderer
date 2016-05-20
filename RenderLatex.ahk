@@ -4,18 +4,15 @@ SelectedEq = ""
     global SelectedEq
     ClipSaved := ClipboardAll
     
-    SendInput, ^c
-    ClipWait, 1
-    
+    InputBox, latex, Enter LaTeX
     Sleep, 50
     
-    SelectedEq := Clipboard
+    SelectedEq = %latex%
+    RunWait, javaw -cp ./lib/jlatexmath-1.0.4.jar;./bin/ LatexRenderer %latex%
+    Sleep, 100
     
-    RunWait, javaw -cp ./lib/jlatexmath-1.0.4.jar;./bin/ LatexRenderer "%clipboard%"
     SendInput ^v
-    
     Sleep, 50
-      
     Clipboard := ClipSaved
     ClipSaved =   ; Free the memory in case the clipboard was very large.
 Return
