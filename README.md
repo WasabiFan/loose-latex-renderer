@@ -8,8 +8,10 @@ Currently, the script is set up for quick development and iteration. As a result
 - Java Runtime Environment
 - AutoHotkey
 
-## Building and running with Eclipse
-1. Open the Eclipse project that is at the root of the repository
+## Building and running
+1. Build the Java source files (to produce `.class` files)
+  - If you have Eclipse installed, simply open the Eclipse project that is at the root of the repository.
+  - Otherwise, you can use `javac` on the command line to build the files. You'll have to figure this out on your own; just make sure that you end up with class files in a `bin/` directory.
 2. Launch the `RenderLatex.ahk` file from Windows Explorer
 
 ## Usage
