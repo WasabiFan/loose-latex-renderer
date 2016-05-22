@@ -1,4 +1,4 @@
-# Loose LaTeX renderer
+# On the fly LaTeX renderer
 
 This is a relatively simple AutoHotkey script and accompanying Eclipse Java project that lets you render LaTeX snippets on-the-fly and insert the generated visuals into almost any app that supports images.
 
