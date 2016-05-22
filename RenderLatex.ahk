@@ -36,7 +36,7 @@ RenderLaTeX(latex:="") {
     Sleep, 50
     
     SelectedEq = %latex%
-    RunWait, javaw -cp ./lib/jlatexmath-1.0.4.jar;./bin/ LatexRenderer %latex%
+    RunWait, javaw -cp ./lib/jlatexmath-1.0.4.jar;./bin/ LatexRenderer "%latex%"
     Sleep, 100
     
     SendInput ^v
