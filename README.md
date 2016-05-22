@@ -20,3 +20,5 @@ Keystroke | Action
 <kbd>Ctrl</kbd>+<kbd>L</kbd> | Opens a single-line input window and focuses in the text box. When the window is dismissed, content entered into the box is rendered as LaTeX and pasted at your cursor's location.
 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd> | The same as <kbd>Ctrl</kbd>+<kbd>L</kbd>, but allows for multi-line entry at the expense of dismissal with the <kbd>Enter</kbd> key.
 <kbd>Ctrl</kbd>+<kbd>K</kbd> | Pastes the last-entered raw LaTeX string.
+
+![Demo gif](https://github.com/WasabiFan/loose-latex-renderer/wiki/LaTeX%20Demo.gif)
