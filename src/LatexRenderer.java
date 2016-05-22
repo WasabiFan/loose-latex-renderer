@@ -41,7 +41,7 @@ public class LatexRenderer {
         TeXFormula formula = new TeXFormula(args[0]);
 
         System.out.println("Creating icon");
-        TeXIcon icon = formula.new TeXIconBuilder().setStyle(TeXConstants.STYLE_DISPLAY).setSize(50).build();
+        TeXIcon icon = formula.new TeXIconBuilder().setStyle(TeXConstants.STYLE_DISPLAY).setSize(100).build();
         icon.setInsets(new Insets(5, 5, 5, 5));
 
         System.out.println("Copying to clipboard");
