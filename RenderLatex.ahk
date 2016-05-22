@@ -36,7 +36,19 @@ RenderLaTeX(latex:="") {
     Sleep, 50
     
     SelectedEq = %latex%
-    RunWait, javaw -cp ./lib/jlatexmath-1.0.4.jar;./bin/ LatexRenderer "%latex%"
+    RunWait, javaw -cp ./lib/jlatexmath-1.0.4.jar;./bin/ LatexRenderer "%latex%", , UseErrorLevel
+    
+    If (ErrorLevel > 0) {
+        SendInput, syntax error
+        Send {Shift down}
+        Loop 12
+            Send, {Left}
+        
+        Send {Shift up}
+        
+        Return
+    }
+    
     Sleep, 100
     
     SendInput ^v
