@@ -6,7 +6,7 @@ This is a relatively simple AutoHotkey script and accompanying Eclipse Java proj
 Currently, the script is set up for quick development and iteration. As a result, one must be able to manually compile the Java portion of the app to be able to run it.
 - Eclipse or ability to manually compile Java
 - Java Runtime Environment
-- AutoHotkey
+- [AutoHotkey](https://www.autohotkey.com/)
 
 ## Building and running
 1. Build the Java source files (to produce `.class` files)
