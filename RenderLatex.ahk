@@ -1,7 +1,7 @@
 SelectedEq = ""
 
 ^l::
-    InputBox, latex, Enter LaTeX
+    InputBox, latex, Enter LaTeX, , , , 100
     
     RenderLaTeX(latex)
 Return
