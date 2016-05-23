@@ -1,4 +1,4 @@
-# Loose LaTeX renderer
+# On the fly LaTeX renderer
 
 This is a relatively simple AutoHotkey script and accompanying Eclipse Java project that lets you render LaTeX snippets on-the-fly and insert the generated visuals into almost any app that supports images.
 
@@ -6,7 +6,7 @@ This is a relatively simple AutoHotkey script and accompanying Eclipse Java proj
 Currently, the script is set up for quick development and iteration. As a result, one must be able to manually compile the Java portion of the app to be able to run it.
 - Eclipse or ability to manually compile Java
 - Java Runtime Environment
-- AutoHotkey
+- [AutoHotkey](https://www.autohotkey.com/)
 
 ## Building and running
 1. Build the Java source files (to produce `.class` files)
@@ -20,3 +20,5 @@ Keystroke | Action
 <kbd>Ctrl</kbd>+<kbd>L</kbd> | Opens a single-line input window and focuses in the text box. When the window is dismissed, content entered into the box is rendered as LaTeX and pasted at your cursor's location.
 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd> | The same as <kbd>Ctrl</kbd>+<kbd>L</kbd>, but allows for multi-line entry at the expense of dismissal with the <kbd>Enter</kbd> key.
 <kbd>Ctrl</kbd>+<kbd>K</kbd> | Pastes the last-entered raw LaTeX string.
+
+![Demo gif](https://github.com/WasabiFan/loose-latex-renderer/wiki/LaTeX%20Demo.gif)
